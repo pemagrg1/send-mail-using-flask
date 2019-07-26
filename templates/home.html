@@ -1,0 +1,50 @@
+<link href="static/css/style.css" rel="stylesheet" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<link href="static/css/media.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+table, th  {
+  border: 2px solid black;
+}
+td  {
+  border: 1px solid black;
+}
+
+</style>
+
+<center><h1>Send Mail</h1></center>
+<div style="border-style: inset;">
+    <div style="margin-left:45px;">
+        <form action="/get_details" method="POST"
+              enctype="multipart/form-data">
+            <br>
+            To: <input type="text" name="receiver"><br>
+            From: <input type="text" name="sender"><br>
+            Password: <input type="text" name="password"><br>
+            Subject: <input type="text" name="subject"><br>
+            Message: <textarea id="story" name="message" rows="5" cols="33"></textarea><br>
+            <button class="btn">Send</button>
+        </form>
+    </div>
+    <br>
+</div>
+
+
+<!--</div>-->
